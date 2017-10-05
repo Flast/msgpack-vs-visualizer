@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+     Copyright (c) 2017 Kohei Takahashi
+
+     Distributed under the Boost Software License, Version 1.0. (See accompanying
+     file LICENSE_1_0.txt or copy at http://www.boost.org/LICENSE_1_0.txt)
+-->
+<AutoVisualizer xmlns="http://schemas.microsoft.com/vstudio/debugger/natvis/2010">
+  <Type Name="msgpack::v1::object_array">
+    <Expand>
+      <Item Name="[size]" ExcludeView="simple">size</Item>
+      <ArrayItems>
+        <Size>size</Size>
+        <ValuePointer>ptr</ValuePointer>
+      </ArrayItems>
+    </Expand>
+  </Type>
+  <Type Name="msgpack::v1::object_map">
+    <Expand>
+      <Item Name="[size]" ExcludeView="simple">size</Item>
+      <ArrayItems>
+        <Size>size</Size>
+        <ValuePointer>ptr</ValuePointer>
+      </ArrayItems>
+    </Expand>
+  </Type>
+  <Type Name="msgpack::v1::object_str">
+    <StringView>ptr,[size]</StringView>
+    <Expand>
+      <Item Name="[size]" ExcludeView="simple">size</Item>
+      <ArrayItems>
+        <Size>size</Size>
+        <ValuePointer>ptr</ValuePointer>
+      </ArrayItems>
+    </Expand>
+  </Type>
+  <Type Name="msgpack::v1::object_bin">
+    <StringView>ptr,[size]</StringView>
+    <Expand>
+      <Item Name="[size]" ExcludeView="simple">size</Item>
+      <ArrayItems>
+        <Size>size</Size>
+        <ValuePointer>ptr</ValuePointer>
+      </ArrayItems>
+    </Expand>
+  </Type>
+  <Type Name="msgpack::v1::object_map">
+    <StringView>ptr,[size]</StringView>
+    <Expand>
+      <Item Name="[size]" ExcludeView="simple">size</Item>
+      <ArrayItems>
+        <Size>size</Size>
+        <ValuePointer>ptr</ValuePointer>
+      </ArrayItems>
+    </Expand>
+  </Type>
+  <Type Name="msgpack::v1::object_ext">
+    <StringView>ptr+1,[size]</StringView>
+    <Expand>
+      <Item Name="[size]" ExcludeView="simple">size</Item>
+      <Item Name="[type]">ptr[0]</Item>
+      <ArrayItems>
+        <Size>size</Size>
+        <ValuePointer>ptr + 1</ValuePointer>
+      </ArrayItems>
+    </Expand>
+  </Type>
+</AutoVisualizer>
