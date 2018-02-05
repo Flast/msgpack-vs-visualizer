@@ -1,6 +1,8 @@
 # msgpack-vs-visualizer
 
-MsgPack object visualizer for Visual Studio Debugger
+MsgPack object visualizer for Visual Studio Debugger (for Native, msgpack-c)
+
+> for visualizing .NET project, see [drewnoakes/msgpack-vs-visualiser-dotnet](https://github.com/drewnoakes/msgpack-vs-visualiser-dotnet).
 
 ## Supported VS versions
 
